@@ -1,0 +1,26 @@
+dir /dev 0755 0 0
+nod /dev/console 0644 0 0 c 5 1
+nod /dev/tty0 0644 0 0 c 4 0
+nod /dev/loop0 0644 0 0 b 7 0
+dir /bin 0755 0 0
+dir /sbin 0755 0 0
+dir /usr 0755 0 0
+dir /usr/bin 0755 0 0
+dir /usr/sbin 0755 0 0
+slink /bin/sh busybox 0755 0 0
+slink /bin/cat busybox 0755 0 0
+slink /bin/ls busybox 0755 0 0
+slink /bin/mkdir busybox 0755 0 0
+slink /bin/mount busybox 0755 0 0
+slink /bin/reboot busybox 0755 0 0
+slink /bin/rm busybox 0755 0 0
+slink /bin/rmdir busybox 0755 0 0
+slink /bin/sleep busybox 0755 0 0
+slink /bin/umount busybox 0755 0 0
+file /bin/busybox kbl/busybox-i686 0755 0 0
+file /bin/kexec kbl/kexec-i686 0755 0 0
+dir /dev/pts 0755 0 0
+dir /proc 0755 0 0
+dir /sys 0755 0 0
+dir /mnt 0755 0 0
+file /init kbl/init 0755 0 0
