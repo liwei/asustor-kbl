@@ -8,3 +8,9 @@ Usage
 
 upload arch/x86/boot/bzImage to as204te with Y-moden.
 ```
+
+Some useful CEFDK commands
+----------------------------
+# mfh list
+# ymodem 0x200000
+# bootkernel -b 0x200000 "console=tty0 console=ttyS0,115200"
